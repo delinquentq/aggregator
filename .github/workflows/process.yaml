@@ -13,7 +13,7 @@ env:
   SUBSCRIBE_CONF: ${{ secrets.SUBSCRIBE_CONF }}
 
   # token
-  PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+  PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }} # 确保这里的 PUSH_TOKEN 与你仓库 Secrets 中的名称完全一致
 
   # network reachable
   REACHABLE: ${{ vars.REACHABLE }}
@@ -50,7 +50,21 @@ jobs:
       - name: Install
         run: pip3 install -r requirements.txt
 
+      # -------- 添加的调试步骤开始 --------
+      - name: Debug PUSH_TOKEN Presence
+        run: |
+          if [ -z "${{ env.PUSH_TOKEN }}" ]; then
+            echo "::error::PUSH_TOKEN environment variable is NOT set or is empty!"
+            # 你甚至可以在这里强制失败，如果你想确保 Token 必须存在
+            # exit 1
+          else
+            echo "PUSH_TOKEN environment variable is set (length check omitted for security)."
+            # 为了安全，不直接打印 Token 或其长度，只确认它存在且非空
+          fi
+      # -------- 添加的调试步骤结束 --------
+
       - name: Process
+        # 脚本会自动继承 env 中定义的 PUSH_TOKEN
         run: python -u subscribe/process.py --overwrite
 
       - name: Timestamp

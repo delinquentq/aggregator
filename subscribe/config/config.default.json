@@ -1,14 +1,14 @@
 {
     "domains": [
         {
-            "name": "",
+            "name": "free",
             "sub": [],
             "domain": "",
             "enable": true,
             "rename": "",
             "include": "",
             "exclude": "",
-            "push_to": [],
+            "push_to": ["free"],
             "ignorede": true,
             "liveness": true,
             "tag": "",
@@ -145,13 +145,13 @@
         ]
     },
     "groups": {
-        "xxx": {
+        "free": {
             "emoji": true,
             "list": true,
             "targets": {
-                "clash": "xxx-clash",
-                "singbox": "xxx-singbox",
-                "v2ray": "xxx-v2ray"
+                "clash": "free-clash",
+                "singbox": "free-singbox",
+                "v2ray": "free-v2ray"
             },
             "regularize": {
                 "enable": false,
@@ -161,12 +161,12 @@
         }
     },
     "storage": {
-        "engine": "xxx",
+        "engine": "gist",
         "items": {
-            "xxx-clash": {
-                "username": "",
+            "free-clash": {
+                "username": "delinquentq/d5ddeed14bbdb7ffa2fc239774a05615",
                 "folderid": "",
-                "fileid": ""
+                "fileid": "clash.yaml"
             },
             "xxx-singbox": {
                 "fileid": ""

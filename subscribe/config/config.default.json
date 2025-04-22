@@ -163,8 +163,8 @@
         "items": {
             "felix-clash": {
                 "username": "delinquentq",
-                "folderid": "8eba9f72b54c8be6a9657430293a4018",
-                "fileid": "felix.yaml"
+                "gistid": "8eba9f72b54c8be6a9657430293a4018",
+                "filename": "felix.yaml"
             }
         }
     }

@@ -149,9 +149,9 @@
             "emoji": true,
             "list": true,
             "targets": {
-                "clash": "free-clash",
-                "singbox": "free-singbox",
-                "v2ray": "free-v2ray"
+                "clash": "free:clash",
+                "singbox": "free:singbox",
+                "v2ray": "free:v2ray"
             },
             "regularize": {
                 "enable": false,
@@ -163,22 +163,10 @@
     "storage": {
         "engine": "gist",
         "items": {
-            "free-clash": {
+            "free:clash": {
                 "username": "delinquentq",
                 "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
                 "fileid": "clash.yaml"
-            },
-            "xxx-singbox": {
-                "fileid": ""
-            },
-            "xxx-v2ray": {
-                "username": "",
-                "fileid": ""
-            },
-            "crawledsubs": {
-                "username": "",
-                "folderid": "",
-                "fileid": ""
             },
             "crawledproxies": {
                 "username": "",

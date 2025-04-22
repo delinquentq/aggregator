@@ -149,9 +149,7 @@
             "emoji": true,
             "list": true,
             "targets": {
-                "clash": "free:clash",
-                "singbox": "free:singbox",
-                "v2ray": "free:v2ray"
+                "clash": "free:clash"
             },
             "regularize": {
                 "enable": false,

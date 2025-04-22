@@ -166,6 +166,11 @@
                 "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
                 "fileid": "clash.yaml"
             },
+             "free": {  // 添加这个配置项
+                "username": "delinquentq",
+                "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
+                "fileid": "clash.yaml"
+        }
             "crawledproxies": {
                 "username": "",
                 "folderid": "",

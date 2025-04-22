@@ -164,8 +164,8 @@
         "engine": "gist",
         "items": {
             "free-clash": {
-                "username": "delinquentq/d5ddeed14bbdb7ffa2fc239774a05615",
-                "folderid": "",
+                "username": "delinquentq",
+                "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
                 "fileid": "clash.yaml"
             },
             "xxx-singbox": {

@@ -1,14 +1,14 @@
 {
     "domains": [
         {
-            "name": "free",
+            "name": "auto",
             "sub": [],
             "domain": "",
             "enable": true,
             "rename": "",
             "include": "",
             "exclude": "",
-            "push_to": ["free"],
+            "push_to": ["felix"],
             "ignorede": true,
             "liveness": true,
             "tag": "",
@@ -145,11 +145,11 @@
         ]
     },
     "groups": {
-        "free": {
+        "felix": {
             "emoji": true,
             "list": true,
             "targets": {
-                "clash": "free:clash"
+                "clash": "felix:clash"
             },
             "regularize": {
                 "enable": false,
@@ -161,16 +161,11 @@
     "storage": {
         "engine": "gist",
         "items": {
-            "free:clash": {
+            "felix:clash": {
                 "username": "delinquentq",
                 "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
                 "fileid": "clash.yaml"
             },
-             "free": {  // 添加这个配置项
-                "username": "delinquentq",
-                "folderid": "d5ddeed14bbdb7ffa2fc239774a05615",
-                "fileid": "clash.yaml"
-        },
             "crawledproxies": {
                 "username": "",
                 "folderid": "",
